@@ -27,5 +27,6 @@ batteryView.level = 42 // anywhere in 0...100
 
   s.source       = { :git => "https://github.com/yonat/BatteryView.git", :tag => s.version }
   s.source_files  = "Sources/*"
+  s.frameworks = 'Foundation'
   s.dependency   "EVReflection/MoyaRxSwift"
 end
