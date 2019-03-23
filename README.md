@@ -1,4 +1,4 @@
-# BatteryView
+# M2YPod
 Simple battery shaped UIView.
 
 [![Swift Version][swift-image]][swift-url]
@@ -8,42 +8,6 @@ Simple battery shaped UIView.
 [![Platform](https://img.shields.io/cocoapods/p/BatteryView.svg?style=flat)](http://cocoapods.org/pods/BatteryView)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-<p align="center">
-<img src="Screenshots/Battery.png">
-</p>
-
-## Usage
-
-```swift
-let batteryView = BatteryView(frame: smallRect)
-batteryView.level = 42 // anywhere in 0...100
-batteryView.lowThreshold = 25 // battery fill becomes red if level is below this threshold
-```
-
-## Changing Appearance
-
-**Colors:**
-
-
-```swift
-batteryView.borderColor    = .darkGray
-batteryView.highLevelColor = .green
-batteryView.lowLevelColor  = .red
-batteryView.noLevelColor   = .gray
-```
-
-**Battery Shape:**
-
-```swift
-batteryView.direction = .minXEdge     // terminal facing left
-
-batteryView.terminalLengthRatio = 0.1 // relative to battery length
-batteryView.terminalWidthRatio = 0.4  // relative to battery width
-
-batteryView.borderWidth = 2.5         // default is batteryLength / 20
-batteryView.cornerRadius = 5          // default is batteryLength / 10
-
-```
 
 ## Requirements
 
@@ -55,7 +19,7 @@ batteryView.cornerRadius = 5          // default is batteryLength / 10
 ### CocoaPods:
 
 ```ruby
-pod 'BatteryView'
+pod 'M2YPod'
 ```
 
 ### Manually:
@@ -64,9 +28,8 @@ Copy `Sources/*` to your Xcode project.
 
 ## Meta
 
-[@yonatsharon](https://twitter.com/yonatsharon)
 
-[https://github.com/yonat/BatteryView](https://github.com/yonat/BatteryView)
+[https://github.com/caiotuxo/M2YPod](https://github.com/caiotuxo/M2YPod)
 
 [swift-image]:https://img.shields.io/badge/swift-4.2-orange.svg
 [swift-url]: https://swift.org/

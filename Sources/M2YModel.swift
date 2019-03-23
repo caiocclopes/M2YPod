@@ -11,7 +11,7 @@ import EVReflection
 
 open class M2YModel: EVNetworkingObject {
     
-    override func skipPropertyValue(_ value: Any, key: String) -> Bool {
+    override open func skipPropertyValue(_ value: Any, key: String) -> Bool {
         if let value = value as? String, value.count == 0 || value == "null" {
             return true
         } else if let value = value as? NSArray, value.count == 0 {
