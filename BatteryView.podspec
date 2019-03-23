@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BatteryView"
-  s.version      = "1.3.0"
+  s.version      = "1.3.1"
   s.summary      = "Simple battery shaped UIView."
 
   s.description  = <<-DESC
@@ -27,4 +27,5 @@ batteryView.level = 42 // anywhere in 0...100
 
   s.source       = { :git => "https://github.com/yonat/BatteryView.git", :tag => s.version }
   s.source_files  = "Sources/*"
+  s.dependency =  'EVReflection/MoyaRxSwift'
 end
