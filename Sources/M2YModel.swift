@@ -1,0 +1,25 @@
+//
+//  M2YModel.swift
+//  Mobile2you
+//
+//  Created by Mobile2You on 02/05/2018.
+//  Copyright © 2018 Mobile2You. All rights reserved.
+//
+
+import Foundation
+import EVReflection
+
+class M2YModel: EVNetworkingObject {
+    
+    override func skipPropertyValue(_ value: Any, key: String) -> Bool {
+        if let value = value as? String, value.count == 0 || value == "null" {
+            return true
+        } else if let value = value as? NSArray, value.count == 0 {
+            return true
+        } else if value is NSNull {
+            return true
+        }
+        return false
+    }
+    
+}
