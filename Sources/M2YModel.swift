@@ -9,7 +9,7 @@
 import Foundation
 import EVReflection
 
-class BatteryView: EVNetworkingObject {
+open class M2YModel: EVNetworkingObject {
     
     override func skipPropertyValue(_ value: Any, key: String) -> Bool {
         if let value = value as? String, value.count == 0 || value == "null" {
