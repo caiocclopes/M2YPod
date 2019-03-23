@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE.txt" }
 
   s.author             = { "Caio Lopes" => "caio.lopes@mobile2you.com.br" }
-  s.social_media_url   = "http://twitter.com/yonatsharon"
+  s.social_media_url   = "http://facebook.com/mobile2you"
+  s.homepage   = "http://www.mobile2you.com.br"
 
   s.swift_version = '4.2'
   s.platform     = :ios, "8.0"
